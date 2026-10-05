@@ -1,5 +1,9 @@
 AI супер скила для 1С разработки
 
+[![Инфостарт](https://infostart.ru/bitrix/templates/sandbox_empty/assets/tpl/abo/img/logo.svg)](https://infostart.ru/1c/articles/2807107/)
+
+Публикация на Инфостарте: [Как я учил ИИ-помощника писать и проверять код 1С без ложных придирок](https://infostart.ru/1c/articles/2807107/).
+
 **Статус:** релиз **1.2.0** — полный процессный контур без заглушек в `SKILL.md`.
 
 Набор процессных скиллов для AI-агента (Cursor, Claude Code, Codex и любой, кто читает `SKILL.md`). Не каталог tool-skills и не замена BSL LS / Sonar: сначала фаза и роутер, потом инструменты и MCP.
