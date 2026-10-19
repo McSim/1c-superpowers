@@ -126,6 +126,8 @@ class DiagnoseAndTddExtraTests(unittest.TestCase):
         self.assertIn("yaxunit", tdd)
         self.assertIn("ветка yaxunit", tdd)
         self.assertIn("ветка va", tdd)
+        self.assertIn("факт цели", tdd)
+        self.assertIn("не этот же агент", tdd)
 
 
 if __name__ == "__main__":

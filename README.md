@@ -4,7 +4,7 @@ AI супер скила для 1С разработки
 
 Публикация на Инфостарте: [Как я учил ИИ-помощника писать и проверять код 1С без ложных придирок](https://infostart.ru/1c/articles/2807107/).
 
-**Статус:** релиз **1.2.0** — полный процессный контур без заглушек в `SKILL.md`.
+**Статус:** релиз **1.3.0** — эталон до кода и доказательство цели, полный процессный контур без заглушек в `SKILL.md`.
 
 Набор процессных скиллов для AI-агента (Cursor, Claude Code, Codex и любой, кто читает `SKILL.md`). Не каталог tool-skills и не замена BSL LS / Sonar: сначала фаза и роутер, потом инструменты и MCP.
 
@@ -14,12 +14,14 @@ AI супер скила для 1С разработки
 |--------|--------|
 | Роутинг | `using-1c-superpowers` |
 | Задумать → спланировать → сделать | `1c-brainstorming`, `1c-writing-plans`, `1c-executing-plans` |
-| Реализация и сбои | `1c-tdd`, `1c-systematic-debugging`, `1c-performance` |
+| Реализация и сбои | `1c-tdd` (эталон до кода), `1c-systematic-debugging`, `1c-performance` |
 | Сдача | `1c-verification`, `1c-review`, `1c-receiving-review`, `1c-finish-branch` |
 | Домен 1С | `1c-extension`, `1c-update`, `1c-exchange` |
 | Набор и диагностика | `1c-writing-skills`, `diagnosing-1c-superpowers` |
 
-Цепочка по умолчанию: brainstorm → plan → execute (+ tdd / extension / update / exchange) → при сбое debug → verify → review → finish. **Сводку и вердикт сдачи** пишет только `1c-review`.
+Цепочка по умолчанию: brainstorm → plan → execute (+ эталон/TDD / extension / update / exchange) → при сбое debug → verify → review → finish. **Сводку и вердикт сдачи** пишет только `1c-review`.
+
+Для своей доработки «готово» требует наблюдённого факта цели: проведение, движения Дт/Кт, числа отчёта или статус обмена. Чистый diff и зелёный синтаксис доказательством результата не считаются.
 
 Карточки правил (`transactions`, `exchange`, `extension`, `gate`, …) лежат в `skills/1c-review/` и открываются, когда diff их касается. Область — изменённые процедуры и явно подтянутые файлы; без выгрузки — «не хватает факта», не выдуманный запрет.
 

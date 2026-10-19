@@ -20,6 +20,7 @@ class ScenarioTests(unittest.TestCase):
             ("plan-no-code-before-ok.md", "пути"),
             ("tdd-no-oracle-stop.md", "нет оракула"),
             ("tdd-no-oracle-stop.md", "стоп"),
+            ("tdd-no-oracle-stop.md", "факт"),
             ("debug-hypothesis-from-fact.md", "факт"),
             ("debug-hypothesis-from-fact.md", "гипотез"),
             ("update-vendor-killers.md", "убьёт merge"),
@@ -68,6 +69,8 @@ class ProcessSkillTests(unittest.TestCase):
             "можно запускать сценарии",
             "find_checks",
             "ветка",
+            "факт цели",
+            "не этот же агент",
         ):
             self.assertIn(needle, tdd)
         self.assertIn("ветка yaxunit", tdd)
