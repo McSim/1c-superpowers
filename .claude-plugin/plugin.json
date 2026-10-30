@@ -1,7 +1,7 @@
 {
   "name": "1c-superpowers",
   "description": "AI супер скила для 1С разработки: процессный набор скиллов plan → правка → debug → verify → review → сдача. Рабочую базу не открывает.",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "author": {
     "name": "Дмитрий Зябликов"
   },
